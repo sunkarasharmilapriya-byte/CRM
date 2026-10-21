@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fa">
+    <meta name="description" content="A thoughtful workspace for your customers, deals, and team.">
+    <title>Northstar CRM</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="loading-screen"><div class="brand-mark">N</div><span>Getting your workspace ready…</span></div>
+    </div>
+    <div id="toast-region" class="toast-region" aria-live="polite"></div>
+    <dialog id="record-dialog" class="record-dialog" aria-labelledby="dialog-title">
+      <form id="record-form" method="dialog">
+        <div class="dialog-heading">
+          <div><span class="eyebrow" id="dialog-eyebrow">WORKSPACE</span><h2 id="dialog-title">New record</h2></div>
+          <button class="icon-button" type="button" data-close-dialog aria-label="Close dialog">×</button>
+        </div>
+        <div id="form-fields" class="form-fields"></div>
+        <div class="dialog-actions">
+          <button class="button button-quiet" type="button" data-close-dialog>Cancel</button>
+          <button class="button button-primary" type="submit">Save record</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
